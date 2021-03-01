@@ -1,0 +1,323 @@
+@media screen and (max-width: 800px) and (min-width: 300px) {
+
+    header {
+        height: 130px;
+        flex-wrap: wrap;
+    }
+    #container {
+        width: 100%;
+    }
+    .top {
+        display: flex;
+        width: 100%;
+        height: 50px;
+        background-color: #2b3643;
+        position: fixed;
+        z-index: 100;
+    }
+    
+    /* Side menu */
+    #side-checkbox {
+        display: none;
+    }
+    .side-panel {
+        position: fixed;
+        z-index: 999999;
+        top: 50px;
+        left: -360px;
+        background: #2b3643;
+        transition: all 0.5s;
+        width: 200px;
+        height: 100vh;
+        box-shadow: 10px 0 10px rgba(0, 0, 0, 0.4);
+        color: #FFF;
+        padding: 20px 20px;
+    }
+
+    .side-title {
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .side-title a {
+        font-size: 18px;
+        padding: 15px;
+        color: #d5d8d7;
+        text-decoration: none;
+        font-family: Arial, Helvetica, sans-serif;
+        width: 100%;
+    }
+
+    .side-title a:hover {
+        color:rgb(204, 169, 171);
+    }
+
+    .side-button-1-wr {
+        text-align: center;
+    }
+    
+    /* Button change*/
+
+    .side-button-1 .side-close {
+        display: none;
+    }
+    #side-checkbox:checked+.side-panel+.side-button-1-wr .side-button-1 .side-open {
+        display: none;
+    }
+    #side-checkbox:checked+.side-panel+.side-button-1-wr .side-button-1 .side-close {
+        display: block;
+    }
+    #side-checkbox:checked+.side-panel {
+        left: 0;
+    }
+ 
+    /* Search form */
+
+    .search-container {
+        display: flex;
+        width: 100%;
+        height: 40px;
+        margin-top: 50px;
+    }
+    .search-form {
+        height: 40px;
+        width: 100%;
+        padding-left: 15px;
+    }
+    header input[type=text] {
+        padding: 6px;
+        margin-top: 8px;
+        font-size: 15px;
+        border: none;
+        text-align: left;
+        width: calc(100% - 45px);
+        float: left;
+    }
+    header .search-container button {
+        float: left;
+        text-align: left;
+        margin-top: 8px;
+        padding: 6px;
+        background: rgb(255, 255, 255);
+        font-size: 15px;
+        border: none;
+        cursor: pointer;
+    }
+
+    /* name of the site */
+    .name {
+        justify-content: center;
+        font-size: 35px;
+        padding-left: 0px;
+        padding-bottom: 0px;
+        width: 100%;
+    }
+
+
+    /* first navigation on the top side */
+    .navigation {
+        display: none;
+    }
+ 
+    .searchIcon {
+        display: none !important;
+    }
+
+
+    /* main menu */
+    nav {
+        height: 100%;
+        padding-left: 0px;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding: 15px 0px;
+    }
+    .nav-menu {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    nav a {
+        font-size: 15px;
+        padding: 5px;
+    }
+
+
+    /* content block */
+    /* main page */
+
+    content {
+        background-size: 100%;
+    }
+    .background-picture {
+        height: 230px;
+    }
+    content h1 {
+        font-size: 30px;
+        padding-top: 30px;
+        color: #ffffff;
+        text-shadow: 2px 2px #444;
+    }
+    .text {
+        font-size: 15px;
+        padding-left: 5%;
+        padding-right: 5%;
+        color: #d4d4d4;
+    }
+
+    .buttons a {
+        font-size: 12px;
+        padding: 10px 20px;
+        color: #e8e8e8;
+        border: 2px solid #e8e8e8;
+    }
+    .more-films {
+        display: none;
+    }
+
+
+    /* Film categories block */
+    .film-categories>h1, .more-movies h1, .popular h1, .comments h1, .mail h1 {
+        font-size: 25px;
+        padding-top: 0px;
+        margin-top: 20px;
+        text-align: center;
+    }
+    .film-categories>p {
+        font-size: 14px;
+        padding: 0px 15px;
+    }
+
+    .button-search a {
+        font-size: 15px;
+        padding: 10px 50px;
+    }
+
+    .list {
+        height: 450px;
+        margin-left: 40px;
+    }
+
+    .container {
+        font-size: 15px;
+    }
+
+    .movie img {
+        width: 250px;
+        height: 320px;
+    }
+
+    .scale {
+        width: 250px;
+        height: 320px;
+
+    }
+
+    .film {
+        width: 250px;
+        height: 320px;
+    }
+
+
+    /* Popular block */
+    .popular {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .popular-movie {
+        flex-wrap: wrap;
+    }
+    .popular-movie img {
+        height: 160px;
+        width: 160px;
+    }
+    .popular .scale {
+        height: 160px;
+        width: 160px;
+    }
+    .stars {
+        padding: 10px;
+    }
+
+
+    /* Comments block */
+    .comments>p {
+        font-size: 16px;
+        padding: 0px 20px;
+    }
+
+    .oneImagDiv img {
+        width: 300px;
+        height: 200px;
+    }
+
+
+    /* Contact form block */
+    .field {
+        width: 100%;
+    }
+
+    .field>input, textarea {
+        font-size: 15px;
+    }
+
+    .field>input:placeholder-shown+label, .field>textarea:placeholder-shown+label {
+        padding-bottom: 15px;
+        font-size: 13px;
+    }
+
+    .mail-send input {
+        padding: 10px 70px;
+    }
+    .mailing {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    .mail-form {
+        margin-bottom: 50px;
+    }
+    .mail-form label {
+        padding-bottom: 15px;
+    }
+
+
+    /* Google map */
+    iframe {
+        height: 200px;
+    }
+
+
+    /* Footer */
+    footer {
+        flex-wrap: wrap;
+        height: 100%;
+        padding: 50px 0px;
+    }
+    footer .privacy {
+        font-size: 12px;
+        width: 100%;
+    }
+    footer .privacy p {
+        margin: 0px;
+    }
+    footer .phone {
+        font-size: 12px;
+        width: 100%;
+    }
+    footer .icon {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .arrow {
+        display: none;
+    }
+    .contact-us {
+        right: 20px;
+    }
+}

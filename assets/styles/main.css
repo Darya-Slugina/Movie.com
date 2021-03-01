@@ -1,0 +1,679 @@
+body {
+    background-color: #222222;
+    margin: 0;
+}
+
+.search-container {
+    display: none;
+}
+
+header {
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+}
+
+#container {
+    min-height: 100%;
+    width: 59%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    background-color: #1f2324;
+}
+
+.top {
+    display: none;
+}
+
+.search-container {
+    display: none;
+}
+
+/* name of the site */
+.name {
+    display: flex;
+    justify-content: flex-start;
+    color: #ffffff;
+    font-size: 50px;
+    font-weight: bold;
+    padding-left: 80px;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* first navigation on the top side */
+.navigation {
+    width: 100%;
+    text-align: right;
+    padding-right: 90px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.navigation a {
+    font-size: 13px;
+    padding: 15px;
+    color: #a8aeac;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.searchIcon {
+    height: 14px;
+}
+
+.navigation a:hover, .searchIcon:hover {
+    color: #d2d8d8;
+}
+
+/* main menu */
+
+nav {
+    background-color: #f73b4c;
+    height: 80px;
+    padding-left: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+nav a {
+    font-size: 18px;
+    font-weight: 550;
+    display: inline-block;
+    padding: 30px 20px;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav a:hover {
+    color:rgb(75, 73, 73);
+}
+
+/* content block */
+/* main page */
+
+content {
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 auto;
+    background-image: url("./../images/background-1.JPG");
+    background-repeat: no-repeat;
+}
+
+content h1 {
+    font-size: 35px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    padding-top: 140px;
+    color: #c7c7c5;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.text {
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-left: 15%;
+    padding-right: 15%;
+    color: #b8b7b7;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 0px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.buttons a {
+    font-size: 18px;
+    display: flex;
+    padding: 20px 20px;
+    color: #b8b7b7;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 2px solid #b8b7b7;
+    border-radius: 35px;
+    margin: 2px;
+}
+
+.buttons a:hover {
+    color:white;
+    border-color: white;
+}
+
+.more-films {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-top: 96px;
+    bottom: 0;
+}
+
+.more-films a {
+    bottom: 0;
+}
+
+.mainFilms {
+    width: 261px;
+    height: 223px;
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+}
+
+.mainFilms img {
+    transition: all 1s ease-out;
+    display: block;
+}
+
+.mainFilms img:hover {
+    transform: scale(1.2);
+}
+
+/* Film categories block */
+
+.film-categories {
+    background-image: url("./../images/background-2.jpg");
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.film-categories>h1, .more-movies h1, .popular h1, .comments h1, .mail h1 {
+    align-items: flex-start;
+    font-size: 35px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    color: #fdfeff;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 70px;
+}
+
+.film-categories>p {
+    align-items: flex-start;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: #b8b7b7;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0px 100px;
+}
+
+.button-search {
+    display: flex;
+    justify-content: center;
+}
+
+.button-search a {
+    font-size: 18px;
+    display: flex;
+    padding: 20px 50px;
+    color: #b8b7b7;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 2px solid #d6d3d3;
+    border-radius: 35px;
+    margin: 2px;
+    margin-bottom: 50px;
+}
+
+.button-search a:hover {
+    color:white;
+    border-color: white;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 300px;
+    justify-items: center;
+    margin-left: 100px;
+}
+
+.container {
+    display: block;
+    position: relative;
+    padding-left: 40px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    font-size: 20px;
+    user-select: none;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border: solid 1px #717172;
+}
+
+/* On mouse-over, add a grey background color */
+
+.container:hover input~.checkmark {
+    background-color: #ccc;
+}
+
+/* When the radio button is checked, add a white background */
+
+.container input:checked~.checkmark {
+    background-color: #ffffff;
+}
+
+/* More movies block */
+.more-movies {
+    background-color: #1f2324;
+}
+.more-movies>a {
+    display: flex;
+}
+
+.movie {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 50px;
+}
+
+.movie img {
+    width: 200px;
+    height: 280px;
+}
+
+.scale {
+    width: 200px;
+    height: 280px;
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+}
+
+.scale img {
+    transition: all 1s ease-out;
+    display: block;
+}
+
+.scale img:hover {
+    transform: scale(1.2);
+}
+
+.film {
+    position: relative;
+    width: 200px;
+    height: 280px;
+    margin-bottom: 120px;
+}
+
+.contentIMG {
+    position: relative;
+}
+
+.movie-info {
+    position: absolute;
+    bottom: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.movie-info span {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    color: white;
+}
+
+.element {
+    display: flex;
+    justify-content: center;
+}
+
+.movie-icon {
+    position: absolute;
+    bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.movie-info span:hover {
+    color: rgb(0, 0, 0);
+}
+
+.movie-icon i {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    color: rgb(255, 255, 255);
+    margin-right: 5px;
+}
+
+.movie-icon i:hover {
+    color: rgb(0, 0, 0);
+}
+
+.overlayed {
+    position: absolute;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.01) 1.5%, rgba(0, 0, 0, 0.75) 75%);
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+}
+
+/* Popular block */
+
+.popular {
+    margin-bottom: 50px;
+}
+
+.popular-movie {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-left: 70px;
+    margin-right: 50px;
+}
+
+.popular-movie img {
+    height: 130px;
+    width: 130px;
+}
+
+.popular .scale {
+    height: 130px;
+    width: 130px;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.popular .scale img {
+    transition: all 1s ease-out;
+    display: block;
+}
+
+.popular .scale img:hover {
+    transform: scale(1.2);
+}
+
+.stars, .film {
+    text-align: center;
+}
+
+.stars h5, .film h5 {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    margin: 10px;
+}
+
+.stars .checked {
+    color: #fa404e;
+}
+
+.stars span {
+    color: white;
+}
+
+.film h4 {
+    color: rgb(90, 88, 88);
+    font-family: fantasy, Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    margin-top: 5px;
+}
+
+/* Comments block */
+
+.comments {
+    background-image: url("./../images/background-3.png");
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.comments>p {
+    align-items: flex-start;
+    font-size: 22px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0px 150px;
+}
+
+.oneImagDiv {
+    display: block;
+    margin: 0 auto;
+}
+
+.oneImagDiv img {
+    width: 600px;
+    height: 382px;
+}
+
+/* Contact form block */
+
+.mail {
+    background-image: url("./../images/background-2.jpg");
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.field {
+    width: 49%;
+    display: flex;
+    flex-flow: column-reverse;
+    margin-bottom: 1em;
+}
+
+.field textarea {
+    width: 100%;
+}
+
+.field>label, input, textarea {
+    transition: all 0.2s;
+    touch-action: manipulation;
+}
+
+.field>input, textarea {
+    font-size: 20px;
+    color: white;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+    font-family: inherit;
+    -webkit-appearance: none;
+    border-radius: 0;
+    padding: 0;
+    cursor: text;
+    background: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.field>input:focus, 
+.field>textarea:focus {
+    outline: 0;
+    border-bottom: 1px solid #666;
+}
+
+.field>label {
+    letter-spacing: 0.05em;
+    color: #b8b7b7;
+}
+
+.field>input:placeholder-shown+label, 
+.field>textarea:placeholder-shown+label {
+    cursor: text;
+    max-width: 66.66%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    transform-origin: left bottom;
+    transform: translate(0, 2.125rem) scale(1.5);
+}
+
+::-webkit-input-placeholder,
+::-webkit-textarea-placeholder {
+    opacity: 0;
+    transition: inherit;
+}
+
+.field>input:focus::-webkit-input-placeholder,
+.field>textarea:focus::-webkit-textarea-placeholder {
+    opacity: 1;
+}
+
+.field>input:not(:placeholder-shown)+label, 
+.field>input:focus+label,
+.field>textarea:not(:placeholder-shown)+label, 
+.field>textarea:focus+label {
+    transform: translate(0, 0) scale(1);
+    cursor: pointer;
+}
+
+.mail-send {
+    display: flex;
+    justify-content: center;
+    margin: 50px 0px;
+}
+
+.mail-send input {
+    font-size: 15px;
+    display: flex;
+    padding: 20px 70px;
+    background: none;
+    color: #b8b7b7;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 2px solid #d6d3d3;
+    border-radius: 35px;
+    margin: 2px;
+    cursor: pointer;
+}
+
+.mail-send input:hover {
+    color:white;
+    border-color: white;
+}
+
+.mailing {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    height: 100%;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.mail-form {
+    width: 100%;
+    margin-bottom: 90px;
+}
+
+.mail-form label {
+    padding-bottom: 25px;
+}
+
+/* Google map */
+
+.map {
+    display: flex;
+    justify-content: center;
+    background-image: url("./../images/background-2.jpg");
+}
+
+iframe {
+    height: 600px;
+    width: 100%;
+    margin: 10px;
+    border: 0;
+}
+
+/* Footer */
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex: 0 0 auto;
+    background-color: #1f2324;
+    height: 50px;
+    padding: 30px 100px;
+}
+
+footer .privacy {
+    display: flex;
+    justify-content: center;
+    color: #aaaaac;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+footer .phone {
+    display: flex;
+    justify-content: center;
+    color: whitesmoke;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+}
+
+footer .icon {
+    color: #aaaaac;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+footer i {
+    padding-left: 5px;
+}
+
+footer i:hover {
+    color:white;
+}
+
+.arrow {
+    position: fixed;
+    bottom: 50px;
+    right: 420px;
+    cursor: pointer;
+}
+
+.contact-us {
+    position: fixed;
+    bottom: 0px;
+    right: 420px;
+    cursor: pointer;
+}
+

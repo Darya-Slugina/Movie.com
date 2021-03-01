@@ -1,0 +1,177 @@
+@media screen and (max-width: 1450px) and (min-width: 600px) {
+
+body {
+    background-color: #222222;
+    margin: 0;
+}
+
+
+header {
+    flex-wrap: wrap;
+}
+
+#container {
+    width: 100%;
+}
+
+/* name of the site */
+.name {
+    justify-content: center;
+    font-size: 35px;
+    padding-left: 0px;
+    padding-bottom: 0px;
+    width: 100%;
+}
+
+/* first navigation on the top side */
+.navigation {
+    text-align: center;
+    padding-right: 0px;
+    justify-content: center;
+    padding-top: 0px;
+}
+
+.navigation a {
+    font-size: 12px;
+    padding: 0px 15px;
+}
+
+.searchIcon {
+    display:none !important;
+    height: 15px;
+}
+
+/* main menu */
+nav {
+    height: 100%;
+    padding-left: 0px;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 15px 0px;
+}
+
+.nav-menu {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+nav a {
+    font-size: 15px;
+    padding: 10px;
+}
+
+/* content block */
+/* main page */
+
+content {
+    background-size: 100%;
+}
+
+content h1 {
+    padding-top: 100px;
+}
+
+.list {
+    height: 450px;
+}
+
+.container {
+    font-size: 15px;
+}
+
+.movie img {
+    width: 250px;
+    height: 320px;
+}
+
+.scale {
+    width: 250px;
+    height: 320px;
+}
+
+.film {
+    width: 250px;
+    height: 320px;
+}
+
+
+/* Popular block */
+
+.popular {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.popular-movie {
+    flex-wrap: wrap;
+}
+
+.popular-movie img {
+    height: 160px;
+    width: 160px;
+}
+
+.popular .scale {
+    height: 160px;
+    width: 160px;
+}
+
+.stars {
+    padding: 10px;
+}
+
+/* Comments block */
+
+.comments>p {
+    padding: 0px 50px;
+}
+
+/* Contact form block */
+
+.field {
+    width: 100%;
+}
+
+.mail-form label {
+    padding-bottom: 15px;
+}
+
+/* Footer */
+footer {
+    flex-wrap: wrap;
+    height: 100%;
+    padding: 50px 0px;
+}
+
+footer .privacy {
+    font-size: 12px;
+    width: 100%;
+}
+
+footer .privacy p {
+    margin: 0px;
+}
+
+footer .phone {
+    font-size: 12px;
+    width: 100%;
+}
+
+footer .icon {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+
+.arrow {
+    right: 20px;
+}
+
+.contact-us {
+    right: 20px;
+}
+}
